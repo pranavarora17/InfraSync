@@ -9,7 +9,7 @@ const CitizenDashboard = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get('http://localhost:8080/api/work-requests');
+      const res = await axios.get('https://infrasync-backend.onrender.com/api/work-requests');
       setWorks(res.data);
     };
     fetchData();

@@ -10,7 +10,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8080/api/auth/login', formData);
+      const res = await axios.post('https://infrasync-backend.onrender.com/api/auth/login', formData);
       const user = res.data;
       localStorage.setItem('user', JSON.stringify(user));
 

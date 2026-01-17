@@ -33,7 +33,7 @@ const Register = () => {
 
     try {
       // Send to Backend
-      await axios.post('http://localhost:8080/api/auth/signup', payload);
+      await axios.post('https://infrasync-backend.onrender.com/api/auth/signup', payload);
 
       // Success!
       alert("Account Created Successfully! Please Login.");
